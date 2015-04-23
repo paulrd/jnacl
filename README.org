@@ -1,0 +1,24 @@
+* jnacl
+
+A Pure Java implementation of the NaCl curve25519xsalsa20poly1305 crypto
+algorithm.
+
+* Usage
+- Put the following into your project file:
+[jnacl "0.1.0-SNAPSHOT"]
+
+- Put this in your namespace imports:
+#+begin_src clojure
+(:import (com.neilalexander.jnacl NaCl NaClTest))
+#+end_src
+- example:
+#+begin_src clojure
+(NaClTest/main (into-array [""]))
+#+end_src
+
+* License
+
+Copyright © 2015 Paul Dumais
+
+Distributed under the Eclipse Public License either version 1.0 or (at
+your option) any later version.
